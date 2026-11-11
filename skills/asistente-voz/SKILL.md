@@ -3,9 +3,9 @@ name: asistente-voz
 description: Cómo hacer que un programa escuche y hable en español en un PC (Windows o Linux): micrófono por frases, palabra de activación con Whisper, interrumpir mientras habla, hablar rápido por frases, voces Edge/Piper/Chatterbox y cómo crear una voz ORIGINAL (no clonada) con Chatterbox. Úsala para asistentes por voz, avisos hablados, texto a voz o voz a texto locales. Voice assistant STT TTS faster-whisper wake word Piper edge-tts Chatterbox Spanish.
 ---
 
-# Asistente por voz (lo aprendido con Brumo, 2025–2026)
+# Asistente por voz (lo aprendido con Talia, 2025–2026)
 
-Código probado (copia de Brumo, adaptar imports) en `referencia/`: `local.py` (micrófono, nombre,
+Código probado (copia de Talia, adaptar imports) en `referencia/`: `local.py` (micrófono, nombre,
 interrupción, voces), `stt.py` (Whisper), `crear_voces.py` (voz original con Chatterbox).
 
 ## Escuchar

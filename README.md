@@ -1,6 +1,6 @@
-# Brumo skills
+# Talia skills
 
-Lo que aprendimos construyendo **Brumo**, un asistente local (voz + Discord + IA en el PC) para un
+Lo que aprendimos construyendo **Talia** (por dentro el programa se llama `brumo`), una asistente local (voz + Discord + IA en el PC) para un
 taller de impresión 3D en Colombia, guardado como *skills* para Claude Code / Agent Skills.
 
 Cada skill es una carpeta con un `SKILL.md`: qué funciona, qué no, y por qué. Al lado va una carpeta
@@ -37,7 +37,7 @@ cp -r brumo-skills/skills/* ~/.claude/skills/
 
 ## Sobre el código de `referencia/`
 
-- Son copias de módulos del proyecto Brumo: importan `brumo.*`, así que hay que adaptar los
+- Son copias de módulos del proyecto Talia (paquete `brumo`): importan `brumo.*`, así que hay que adaptar los
   imports al copiarlos. Sirven para leer cómo se hizo, no son una librería.
 - Los nombres, costos y direcciones reales se cambiaron por valores de ejemplo.
 - No se incluye ningún modelo ni programa de terceros. Si los usas, respeta sus licencias: Bambu
