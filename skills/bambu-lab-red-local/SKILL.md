@@ -5,8 +5,8 @@ description: Cómo hablar con impresoras 3D Bambu Lab (A1, A1 Combo, P1S, X1C) p
 
 # Impresoras Bambu Lab por la red local
 
-Todo esto se aprendió y se probó con 3 Bambu Lab A1 Combo reales (proyecto Brumo, nov 2026).
-El código completo y probado (copia de Brumo) está en `referencia/`, junto a este archivo:
+Todo esto se aprendió y se probó con 3 Bambu Lab A1 Combo reales (proyecto Talia, nov 2026).
+El código completo y probado (copia de Talia) está en `referencia/`, junto a este archivo:
 `impresoras.py` (MQTT + FTPS), `camaras.py` (foto puerto 6000), `descubrir.py` (encontrarlas),
 `bambu_gui.py` (imprimir manejando Bambu Studio), `imprimir.py` (AMS + orden directa), `cotizador.py`
 (CLI, perfiles, slice_info, precio), `fallas.py` (Obico). Usa `brumo.*` en los import: adaptar al copiar.

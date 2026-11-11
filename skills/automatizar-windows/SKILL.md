@@ -3,9 +3,9 @@ name: automatizar-windows
 description: Recetas probadas para que un programa en Python maneje el PC con Windows sin estorbar al usuario. Cubre arrancar oculto al iniciar sesión y relanzarse si se cae, oprimir botones dibujados de apps que no tienen accesibilidad (ej. Bambu Studio), abrir apps del menú Inicio, saber si hay alguien usando el PC, apagar con margen, luces RGB con OpenRGB, teclados sin soporte y poner música en Spotify gratis. Windows automation Python ctypes Win32 PrintWindow click by color startup VBS OpenRGB.
 ---
 
-# Automatizar Windows desde Python (lo aprendido con Brumo)
+# Automatizar Windows desde Python (lo aprendido con Talia)
 
-Código de referencia en `referencia/` (copias de Brumo): `bambu_gui.py`, `equipo.py`, `luces.py`,
+Código de referencia en `referencia/` (copias de Talia): `bambu_gui.py`, `equipo.py`, `luces.py`,
 `animaciones.py`, `teclado.py`, `spotify.py`, `brumo-oculto.vbs`, `brumo.cmd`.
 
 ## Arrancar solo y sin ventanas

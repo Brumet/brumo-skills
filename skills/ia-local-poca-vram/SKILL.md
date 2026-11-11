@@ -3,7 +3,7 @@ name: ia-local-poca-vram
 description: Lecciones para correr un asistente o agente con IA local (Ollama, modelos de 3–8B, tarjeta de 8 GB o solo procesador) y hacerlo rápido y confiable. Úsala al diseñar o depurar un agente con herramientas (tool calling) en Ollama, decidir qué modelo y num_ctx usar, repartir la VRAM entre LLM, Whisper, visión y voz, evitar que un modelo pequeño invente acciones, o decidir si conviene IA local o Claude Code. Local LLM Ollama small model agent tools VRAM budget prompt cache.
 ---
 
-# IA local con poca VRAM (lo aprendido con Brumo)
+# IA local con poca VRAM (lo aprendido con Talia)
 
 Medido en un PC con RTX 4060 de 8 GB y en un Ryzen 5 5600G sin tarjeta (2026).
 
@@ -15,7 +15,7 @@ Medido en un PC con RTX 4060 de 8 GB y en un Ryzen 5 5600G sin tarjeta (2026).
   - Windows + navegador + Bambu Studio + apps → 1,3–2 GB **siempre**.
   - Total: ~7,9 de 8 GB. Un modelo de visión (qwen2.5vl:3b) **no cabe** al lado: saca al principal (recargar 7 s, y el principal queda al 83 % en GPU, más lento).
   - Chatterbox (voz clonada/expresiva) necesita ~3–4 GB más: imposible junto con lo demás.
-- **Conclusión del dueño (nov 2026)**: no vale la pena dejar una tarjeta de ~2 millones de pesos ocupada 24 h por un asistente; con la VRAM llena el PC no sirve para nada más. Brumo se apagó. Antes de proponer un asistente "siempre encendido" con IA local, sumar la VRAM de TODO y dejar ≥2 GB libres para el usuario.
+- **Conclusión del dueño (nov 2026)**: no vale la pena dejar una tarjeta de ~2 millones de pesos ocupada 24 h por un asistente; con la VRAM llena el PC no sirve para nada más. Talia se apagó. Antes de proponer un asistente "siempre encendido" con IA local, sumar la VRAM de TODO y dejar ≥2 GB libres para el usuario.
 - Alternativas reales:
   - **Claude Code en el PC** para pensar y construir: no ocupa la tarjeta y no tiene cobro aparte con la suscripción. Nunca usar la API de pago.
   - Un **mini PC aparte** con 32 GB de RAM, solo procesador. Es lento: ~6 tokens/s y ~2 min para leer 6.800 tokens en frío.
@@ -50,4 +50,4 @@ Medido en un PC con RTX 4060 de 8 GB y en un Ryzen 5 5600G sin tarjeta (2026).
 ## 5. Privacidad
 - Un módulo único decide qué puede salir del PC: marcar la respuesta como privada si usó herramientas no públicas o trae teléfono, correo, documento, dinero, número de pedido o repite memoria. Lo privado no va a servicios externos (voz en la nube, búsquedas). Las búsquedas web rechazan consultas con datos personales.
 
-Código de referencia (copia de Brumo, adaptar los imports): `referencia/agent.py`, `referencia/rutas.py`, `referencia/llm.py`, `referencia/privacidad.py`.
+Código de referencia (copia de Talia, adaptar los imports): `referencia/agent.py`, `referencia/rutas.py`, `referencia/llm.py`, `referencia/privacidad.py`.
